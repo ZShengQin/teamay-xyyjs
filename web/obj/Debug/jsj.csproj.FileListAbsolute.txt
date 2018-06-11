@@ -1,0 +1,8 @@
+G:\2015\jsj\formal\web\obj\Debug\jsj.csprojResolveAssemblyReference.cache
+G:\2015\jsj\formal\web\bin\Teamay_CBST.dll
+G:\2015\jsj\formal\web\bin\Teamay_CBST.pdb
+G:\2015\jsj\formal\web\bin\TeamayBase.dll
+G:\2015\jsj\formal\web\bin\org.in2bits.MyXls.dll
+G:\2015\jsj\formal\web\bin\TeamayBase.pdb
+G:\2015\jsj\formal\web\obj\Debug\Teamay_CBST.dll
+G:\2015\jsj\formal\web\obj\Debug\Teamay_CBST.pdb

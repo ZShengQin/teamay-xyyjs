@@ -1,0 +1,11 @@
+E:\teamay\江苏省血液研究所\web\bin\Teamay_CBST.dll.config
+E:\teamay\江苏省血液研究所\web\bin\Teamay_CBST.dll
+E:\teamay\江苏省血液研究所\web\bin\Teamay_CBST.pdb
+E:\teamay\江苏省血液研究所\web\bin\TeamayBase.dll
+E:\teamay\江苏省血液研究所\web\bin\org.in2bits.MyXls.dll
+E:\teamay\江苏省血液研究所\web\bin\TeamayBase.pdb
+E:\teamay\江苏省血液研究所\web\obj\Debug\xyyjs.csproj.CoreCompileInputs.cache
+E:\teamay\江苏省血液研究所\web\obj\Debug\xyyjs.csproj.CopyComplete
+E:\teamay\江苏省血液研究所\web\obj\Debug\Teamay_CBST.dll
+E:\teamay\江苏省血液研究所\web\obj\Debug\Teamay_CBST.pdb
+E:\teamay\江苏省血液研究所\web\obj\Debug\xyyjs.csprojResolveAssemblyReference.cache

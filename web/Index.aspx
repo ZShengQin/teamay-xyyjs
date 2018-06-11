@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="True" EnableViewState="false" Inherits="Teamay_CBST.HOME.Index" Codefile="Index.aspx.cs" %>

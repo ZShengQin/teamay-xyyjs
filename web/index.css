@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; border:0; }
+body{
+	font-family:"微软雅黑","宋体","Arial"; 
+	background:#fff;
+	font-size:14px;
+}
+ul{ list-style:none; }
+a{ text-decoration:none; font-size:14px;font-family:"微软雅黑","宋体","Arial"; }
+/*去除链接虚框*/
+a,area { blr:expression(this.onFocus=this.blur()) } /* for IE */
+:focus { outline-style: none; } /* for Firefox，IE8.0等 */　
+a img{ border:0;}
+
+.title-bar{
+  width: 1100px; height: 157px; margin: 0 auto; position: relative;
+  background: url(images/logo.jpg) no-repeat left center;
+}
+.language-choice{ position: absolute; right: 0; top: 22px; color: #7f7f7f; }
+.language-choice a{ color: #7f7f7f; }
+
+.navigation{ height: 60px; background-color: #912c29; }
+.topmenu{ width: 1100px; height: 60px; margin: 0 auto; background-color: #912c29; }
+.navigation ul{ width: 1100px; height: 100%;  }
+.navigation ul li{ width: 122px; text-align: center; position: relative; float: left;  }
+.navigation ul li a{ line-height: 60px; font-size: 18px; color: #fff; }
+
+.content{ margin: 0 auto; }
+.swiper-container{ width: 1100px; height: 350px; margin: 0 auto; }
+
+.main-info{ width: 1100px; margin: 0 auto; }
+.main-info-1{ width: 100%; height: 450px; margin-bottom: 50px; }
+.main-info-2{ width: 100%; height: 225px; }
+
+.header-title{ height: 36px; padding: 12px 0; border-bottom: 1px solid #d0d0d0;}
+.header-cn{
+  border-bottom: 3px solid #ea0000; padding: 18px 0;
+  color: #c03814; font-size: 18px; font-weight: bold; line-height: 36px;
+}
+.header-en{ color: #acacac; font-size: 18px; line-height: 36px; }
+.header-more{
+  float: right; color: #d0d0d0; font-size: 16px; line-height: 36px;
+}
+
+.news{ width: 650px; margin-right: 48px; float: left; }
+.news-item{ height: 160px; margin-top: 43px; }
+.news-item img{ width: 195px; height: 160px; float: left; }
+.news-content{ height: 160px; height: 165px; padding: 0 15px; overflow: hidden; }
+.news-content div{ color: #c03814; font-size: 18px; margin-top: -4px; margin-bottom: 4px; }
+.news-content p{ color: #666; font-size: 15px; line-height: 30px; }
+.news-content p a{ color: #c03814; font-size: 15px; line-height: 30px; }
+
+.academic{ width: 400px; float: right; }
+.academic img{ width: 100%; height: 163px; margin-top: 18px; }
+.academic-title{ margin: 7px 0; color: #c03814; font-size: 18px; line-height: 35px; text-align: center; }
+.academic-content{ margin-bottom: 10px; font-size: 16px; line-height: 24px; }
+.academic-links{ overflow: hidden; }
+.academic-links ul li a{ color: #666; font-size: 14px; line-height: 30px; }
+.academic-links ul li span{ float: right; }
+
+.research{ width: 650px; height: 225px; margin-right: 50px; float: left; }
+.research-links{ height: 150px; padding-top: 15px; }
+.research-links ul li{ color: #666; font-size: 16px; line-height: 30px; }
+.research-links ul li span{ float: right; }
+
+.guide{ width: 370px; height: 225px; padding: 40px 0 0 30px; position: relative; float: right; }
+.guide-img{ margin-top: 10px; width: 200px; float: left;}
+.qrcode{ width: 130px; position: absolute; right: 5px; }
+.qrcode img{ width: 130px; height: 130px; }
+.qrcode p{ color: #333333; font-size: 16px; line-height: 36px; }
+
+.science-plat{ width: 100%; height: 270px; margin-top: 20px; background-color: #f9f9f9; }
+.plat-content{ width: 1100px; margin: 0 auto; background-color: #f9f9f9; }
+.platform div{ width: 200px; height: 100px; margin-left: 450px; color: #c03814; font-size: 24px; line-height: 100px; text-align: center; }
+.platforms { width: 1060px; height: 50px; margin-bottom: 30px; padding: 0 20px; }
+.plat-href { width: 220px; height: 50px; float: left; background-color: #c03814; text-align: center; }
+.plat-href a{ color: #fff;}
+.plat-href-margin{ margin-right: 60px; }
+.platforms div a{ font-size: 18px; line-height: 50px; }
+
+#footer{ height:207px; background:#2e2f2f; clear:both; }
+#footer .content{ width:1100px;  margin:0 auto; height:207px; background:#2e2f2f; }
+#footer .content p{ color:#999; font-size:16px; line-height:30px; text-align:center; padding-top:60px;}
+#footer .content p a{ color: #999; }

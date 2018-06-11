@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F9A9D77-5B6B-454D-B117-DB6D7F983E29}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Teamay_CBST</RootNamespace>
+    <AssemblyName>Teamay_CBST</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DesktopBuildPackageLocation>obj\Website.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.4.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder, Version=2.3.0.2394, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Codefan.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GenCode128, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="Meta.Web, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\CKEditor.NET.dll" />
+    <Content Include="bin\CKFinder.dll" />
+    <Content Include="bin\Codefan.Controls.dll" />
+    <Content Include="bin\en-US\AspNetPager.resources.dll" />
+    <Content Include="bin\en\AspNetPager.resources.dll" />
+    <Content Include="bin\GenCode128.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Meta.Web.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\org.in2bits.MyXls.dll" />
+    <Content Include="bin\TeamayBase.dll" />
+    <Content Include="bin\TeamayBase.pdb" />
+    <Content Include="bin\Teamay_CBST.dll" />
+    <Content Include="bin\Teamay_CBST.pdb" />
+    <Content Include="bin\zh-CHT\AspNetPager.resources.dll" />
+    <Content Include="common\ads.js" />
+    <Content Include="common\flexslider.css" />
+    <Content Include="common\images\about_img.jpg" />
+    <Content Include="common\images\bg.jpg" />
+    <Content Include="common\images\bg_direction_nav.png" />
+    <Content Include="common\images\blank.gif" />
+    <Content Include="common\images\gywm_img.jpg" />
+    <Content Include="common\images\gywm_img2.jpg" />
+    <Content Include="common\images\icon.jpg" />
+    <Content Include="common\images\icon2.jpg" />
+    <Content Include="common\images\in_links_bg.jpg" />
+    <Content Include="common\images\logo.jpg" />
+    <Content Include="common\images\noimg.jpg" />
+    <Content Include="common\images\search_bg.jpg" />
+    <Content Include="common\images\sec_item.jpg" />
+    <Content Include="common\images\sec_top.jpg" />
+    <Content Include="common\images\xsbg_bg.jpg" />
+    <Content Include="common\images\xwdt_img.jpg" />
+    <Content Include="common\jquery.flexslider.js" />
+    <Content Include="common\jquery.js" />
+    <Content Include="common\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="common\lrtk.js" />
+    <Content Include="CN\images\404.jpg" />
+    <Content Include="CN\images\blank.gif" />
+    <Content Include="CN\images\dot.png" />
+    <Content Include="CN\images\foot.png" />
+    <Content Include="CN\images\icon.jpg" />
+    <Content Include="CN\images\img1.jpg" />
+    <Content Include="CN\images\max_img.jpg" />
+    <Content Include="CN\images\min_img.jpg" />
+    <Content Include="CN\images\top.jpg" />
+    <Content Include="CN\images\top_bg.jpg" />
+    <Content Include="CN\Index.aspx" />
+    <Content Include="CN\index.css" />
+    <Content Include="EN\images\A1.jpg" />
+    <Content Include="EN\images\A2.jpg" />
+    <Content Include="EN\images\A3.jpg" />
+    <Content Include="EN\images\A4.jpg" />
+    <Content Include="EN\images\A5.jpg" />
+    <Content Include="EN\images\A6.jpg" />
+    <Content Include="EN\images\A7.jpg" />
+    <Content Include="EN\images\A8.jpg" />
+    <Content Include="EN\images\bigimg.jpg" />
+    <Content Include="EN\images\blank.gif" />
+    <Content Include="EN\images\cczz.jpg" />
+    <Content Include="EN\images\dot.gif" />
+    <Content Include="EN\images\dot.jpg" />
+    <Content Include="EN\images\dot.png" />
+    <Content Include="EN\images\dot2.png" />
+    <Content Include="EN\images\foot - 副本.png" />
+    <Content Include="EN\images\foot.jpg" />
+    <Content Include="EN\images\foot.png" />
+    <Content Include="EN\images\language.jpg" />
+    <Content Include="EN\images\loading.gif" />
+    <Content Include="EN\images\logo.jpg" />
+    <Content Include="EN\images\M1.jpg" />
+    <Content Include="EN\images\M2.jpg" />
+    <Content Include="EN\images\M3.jpg" />
+    <Content Include="EN\images\M4.jpg" />
+    <Content Include="EN\images\M5.jpg" />
+    <Content Include="EN\images\M6.jpg" />
+    <Content Include="EN\images\menu1.jpg" />
+    <Content Include="EN\images\menu2.jpg" />
+    <Content Include="EN\images\menu3.jpg" />
+    <Content Include="EN\images\menu4.jpg" />
+    <Content Include="EN\images\next.png" />
+    <Content Include="EN\images\prev.png" />
+    <Content Include="EN\Index.aspx" />
+    <Content Include="EN\index.css" />
+    <Content Include="EN\parts\foot.ascx" />
+    <Content Include="EN\parts\top.ascx" />
+    <Content Include="EN\ShowPage.aspx" />
+    <Content Include="EN\ShowPicture.aspx" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="CN\parts\foot.ascx" />
+    <Content Include="CN\parts\top.ascx" />
+    <Content Include="CN\ShowPage.aspx" />
+    <Content Include="CN\ShowPicture.aspx" />
+    <Content Include="teamay2017\addadmin.aspx" />
+    <Content Include="teamay2017\addDownload.aspx" />
+    <Content Include="teamay2017\addUser.aspx" />
+    <Content Include="teamay2017\adminList.aspx" />
+    <Content Include="teamay2017\Article_add.aspx" />
+    <Content Include="teamay2017\Article_Edit.aspx" />
+    <Content Include="teamay2017\Article_lanmu2_add.aspx" />
+    <Content Include="teamay2017\Article_lanmu_add.aspx" />
+    <Content Include="teamay2017\Article_list.aspx" />
+    <Content Include="teamay2017\Article_setfirst.aspx" />
+    <Content Include="teamay2017\Article_singlepage_set.aspx" />
+    <Content Include="teamay2017\changepwd.aspx" />
+    <Content Include="teamay2017\CheckCode.aspx" />
+    <Content Include="teamay2017\config.aspx" />
+    <Content Include="teamay2017\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="teamay2017\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="teamay2017\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="teamay2017\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="teamay2017\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="teamay2017\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="teamay2017\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="teamay2017\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="teamay2017\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="teamay2017\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="teamay2017\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="teamay2017\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="teamay2017\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="teamay2017\css\jquery-ui.css" />
+    <Content Include="teamay2017\Default.aspx" />
+    <Content Include="teamay2017\deleteAction.aspx" />
+    <Content Include="teamay2017\downloadList.aspx" />
+    <Content Include="teamay2017\Images\admin_bg_1.gif" />
+    <Content Include="teamay2017\Images\bar.gif" />
+    <Content Include="teamay2017\Images\btubg.png" />
+    <Content Include="teamay2017\Images\btuleft.png" />
+    <Content Include="teamay2017\Images\bturight.png" />
+    <Content Include="teamay2017\Images\ditu.jpg" />
+    <Content Include="teamay2017\Images\dot.gif" />
+    <Content Include="teamay2017\Images\huixian.jpg" />
+    <Content Include="teamay2017\Images\left_1.gif" />
+    <Content Include="teamay2017\Images\left_2.gif" />
+    <Content Include="teamay2017\Images\left_3.gif" />
+    <Content Include="teamay2017\Images\left_4.gif" />
+    <Content Include="teamay2017\Images\left_5.gif" />
+    <Content Include="teamay2017\Images\left_6.gif" />
+    <Content Include="teamay2017\Images\login_h1.jpg" />
+    <Content Include="teamay2017\Images\login_h2.jpg" />
+    <Content Include="teamay2017\Images\login_h3.jpg" />
+    <Content Include="teamay2017\Images\login_h4.jpg" />
+    <Content Include="teamay2017\Images\login_menu.jpg" />
+    <Content Include="teamay2017\Images\login_r1.jpg" />
+    <Content Include="teamay2017\Images\login_r2.jpg" />
+    <Content Include="teamay2017\Images\login_r3.jpg" />
+    <Content Include="teamay2017\Images\login_r4.jpg" />
+    <Content Include="teamay2017\Images\login_r5.jpg" />
+    <Content Include="teamay2017\Images\login_r6.jpg" />
+    <Content Include="teamay2017\Images\login_r7.jpg" />
+    <Content Include="teamay2017\Images\login_r8.jpg" />
+    <Content Include="teamay2017\Images\login_r9.jpg" />
+    <Content Include="teamay2017\Images\login_x.jpg" />
+    <Content Include="teamay2017\Images\logo.jpg" />
+    <Content Include="teamay2017\Images\notice1.jpg" />
+    <Content Include="teamay2017\Images\notice2.jpg" />
+    <Content Include="teamay2017\Images\notice3.jpg" />
+    <Content Include="teamay2017\Images\style.css" />
+    <Content Include="teamay2017\Images\table_1.gif" />
+    <Content Include="teamay2017\Images\table_2.gif" />
+    <Content Include="teamay2017\Images\table_3.gif" />
+    <Content Include="teamay2017\Images\table_4.gif" />
+    <Content Include="teamay2017\Images\thanx.gif" />
+    <Content Include="teamay2017\Images\time.swf" />
+    <Content Include="teamay2017\Images\top_1.gif" />
+    <Content Include="teamay2017\Images\top_2.gif" />
+    <Content Include="teamay2017\Images\top_3.gif" />
+    <Content Include="teamay2017\Images\top_4.gif" />
+    <Content Include="teamay2017\Images\zi.gif" />
+    <Content Include="teamay2017\include\changelog.txt" />
+    <Content Include="teamay2017\include\date.js" />
+    <Content Include="teamay2017\include\datePicker.css" />
+    <Content Include="teamay2017\include\datePicker.js" />
+    <Content Include="teamay2017\include\example.css" />
+    <Content Include="teamay2017\include\frame-demo-step2_php.htm" />
+    <Content Include="teamay2017\include\frame-demo-step3_php.htm" />
+    <Content Include="teamay2017\include\images\ArticleCommon.gif" />
+    <Content Include="teamay2017\include\images\back-1.gif" />
+    <Content Include="teamay2017\include\images\back-12.gif" />
+    <Content Include="teamay2017\include\images\baonn-4.gif" />
+    <Content Include="teamay2017\include\images\bbs_inic11.gif" />
+    <Content Include="teamay2017\include\images\bbs_inic21.gif" />
+    <Content Include="teamay2017\include\images\body_bg.jpg" />
+    <Content Include="teamay2017\include\images\bullet_dot.gif" />
+    <Content Include="teamay2017\include\images\computer.gif" />
+    <Content Include="teamay2017\include\images\dot0.gif" />
+    <Content Include="teamay2017\include\images\edge1.gif" />
+    <Content Include="teamay2017\include\images\icon_bjb.gif" />
+    <Content Include="teamay2017\include\images\icon_topic.gif" />
+    <Content Include="teamay2017\include\images\index-3.gif" />
+    <Content Include="teamay2017\include\images\index1_r33_c16.gif" />
+    <Content Include="teamay2017\include\images\indexback.gif" />
+    <Content Include="teamay2017\include\images\kkk-1.gif" />
+    <Content Include="teamay2017\include\images\link-2.gif" />
+    <Content Include="teamay2017\include\images\location-items.gif" />
+    <Content Include="teamay2017\include\images\lock.gif" />
+    <Content Include="teamay2017\include\images\lock.jpg" />
+    <Content Include="teamay2017\include\images\logo.gif" />
+    <Content Include="teamay2017\include\images\menu.gif" />
+    <Content Include="teamay2017\include\images\new5.gif" />
+    <Content Include="teamay2017\include\images\new_b.gif" />
+    <Content Include="teamay2017\include\images\nonebig.gif" />
+    <Content Include="teamay2017\include\images\ok.gif" />
+    <Content Include="teamay2017\include\images\panel.gif" />
+    <Content Include="teamay2017\include\images\place_bg.jpg" />
+    <Content Include="teamay2017\include\images\standard_msg_error.gif" />
+    <Content Include="teamay2017\include\images\WebResource.gif" />
+    <Content Include="teamay2017\include\jquery.bgiframe.min.js" />
+    <Content Include="teamay2017\include\jquery.js" />
+    <Content Include="teamay2017\include\lib\effects.js" />
+    <Content Include="teamay2017\include\lib\prototype.js" />
+    <Content Include="teamay2017\include\lib\scriptaculous.js" />
+    <Content Include="teamay2017\include\lib\unittest.js" />
+    <Content Include="teamay2017\include\modalbox.css" />
+    <Content Include="teamay2017\include\modalbox.js" />
+    <Content Include="teamay2017\include\spinner.gif" />
+    <Content Include="teamay2017\include\StyleSheet.css" />
+    <Content Include="teamay2017\js\jquery-ui-slide.min.js" />
+    <Content Include="teamay2017\js\jquery-ui-timepicker-addon.js" />
+    <Content Include="teamay2017\js\jquery-ui.js" />
+    <Content Include="teamay2017\Left.aspx" />
+    <Content Include="teamay2017\Logout.aspx" />
+    <Content Include="teamay2017\Main.aspx" />
+    <Content Include="teamay2017\main.htm" />
+    <Content Include="teamay2017\PathConfig.aspx" />
+    <Content Include="teamay2017\PathConfig_New.aspx" />
+    <Content Include="teamay2017\Path_Man.aspx" />
+    <Content Include="teamay2017\SiteList.aspx" />
+    <Content Include="teamay2017\Teacher_add.aspx" />
+    <Content Include="teamay2017\Teacher_list.aspx" />
+    <Content Include="teamay2017\Teacher_Set.aspx" />
+    <Content Include="teamay2017\userList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CN\ErrorHandle.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CN\ErrorHandle.aspx.designer.cs">
+      <DependentUpon>ErrorHandle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CN\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CN\parts\foot.ascx.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\parts\foot.ascx.designer.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CN\parts\top.ascx.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\parts\top.ascx.designer.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\parts\foot.ascx.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\parts\foot.ascx.designer.cs">
+      <DependentUpon>foot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\parts\top.ascx.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\parts\top.ascx.designer.cs">
+      <DependentUpon>top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\ShowPage.aspx.cs">
+      <DependentUpon>ShowPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\ShowPage.aspx.designer.cs">
+      <DependentUpon>ShowPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\ShowPicture.aspx.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\ShowPicture.aspx.designer.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CN\ShowPage.aspx.cs">
+      <DependentUpon>ShowPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\ErrorHandle.aspx.cs">
+      <DependentUpon>ErrorHandle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\ShowPage.aspx.designer.cs">
+      <DependentUpon>ShowPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CN\ShowPicture.aspx.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CN\ShowPicture.aspx.designer.cs">
+      <DependentUpon>ShowPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\addadmin.aspx.cs">
+      <DependentUpon>addadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\addadmin.aspx.designer.cs">
+      <DependentUpon>addadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\addDownload.aspx.cs">
+      <DependentUpon>addDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\addDownload.aspx.designer.cs">
+      <DependentUpon>addDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\addUser.aspx.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\addUser.aspx.designer.cs">
+      <DependentUpon>addUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\adminList.aspx.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\adminList.aspx.designer.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_add.aspx.cs">
+      <DependentUpon>Article_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_add.aspx.designer.cs">
+      <DependentUpon>Article_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_Edit.aspx.cs">
+      <DependentUpon>Article_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_Edit.aspx.designer.cs">
+      <DependentUpon>Article_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_lanmu2_add.aspx.cs">
+      <DependentUpon>Article_lanmu2_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_lanmu2_add.aspx.designer.cs">
+      <DependentUpon>Article_lanmu2_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_lanmu_add.aspx.cs">
+      <DependentUpon>Article_lanmu_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_lanmu_add.aspx.designer.cs">
+      <DependentUpon>Article_lanmu_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_list.aspx.cs">
+      <DependentUpon>Article_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_list.aspx.designer.cs">
+      <DependentUpon>Article_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_setfirst.aspx.cs">
+      <DependentUpon>Article_setfirst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_setfirst.aspx.designer.cs">
+      <DependentUpon>Article_setfirst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Article_singlepage_set.aspx.cs">
+      <DependentUpon>Article_singlepage_set.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Article_singlepage_set.aspx.designer.cs">
+      <DependentUpon>Article_singlepage_set.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\changepwd.aspx.cs">
+      <DependentUpon>changepwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\changepwd.aspx.designer.cs">
+      <DependentUpon>changepwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\CheckCode.aspx.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\CheckCode.aspx.designer.cs">
+      <DependentUpon>CheckCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\config.aspx.cs">
+      <DependentUpon>config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\config.aspx.designer.cs">
+      <DependentUpon>config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\deleteAction.aspx.cs">
+      <DependentUpon>deleteAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\deleteAction.aspx.designer.cs">
+      <DependentUpon>deleteAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\downloadList.aspx.cs">
+      <DependentUpon>downloadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\downloadList.aspx.designer.cs">
+      <DependentUpon>downloadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Left.aspx.designer.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\PathConfig.aspx.cs">
+      <DependentUpon>PathConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\PathConfig.aspx.designer.cs">
+      <DependentUpon>PathConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\PathConfig_New.aspx.cs">
+      <DependentUpon>PathConfig_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\PathConfig_New.aspx.designer.cs">
+      <DependentUpon>PathConfig_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Path_Man.aspx.cs">
+      <DependentUpon>Path_Man.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Path_Man.aspx.designer.cs">
+      <DependentUpon>Path_Man.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\SiteList.aspx.cs">
+      <DependentUpon>SiteList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\SiteList.aspx.designer.cs">
+      <DependentUpon>SiteList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_add.aspx.cs">
+      <DependentUpon>Teacher_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_add.aspx.designer.cs">
+      <DependentUpon>Teacher_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_list.aspx.cs">
+      <DependentUpon>Teacher_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_list.aspx.designer.cs">
+      <DependentUpon>Teacher_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_Set.aspx.cs">
+      <DependentUpon>Teacher_Set.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\Teacher_Set.aspx.designer.cs">
+      <DependentUpon>Teacher_Set.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamay2017\userList.aspx.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamay2017\userList.aspx.designer.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\AspNetPager.dll.refresh" />
+    <None Include="bin\cuteeditor.lic" />
+    <None Include="bin\Meta.Web.dll.refresh" />
+    <None Include="teamay2017\Images\login_r3.psd" />
+    <None Include="teamay2017\Images\Thumbs.db" />
+    <None Include="teamay2017\include\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeamayBase\TeamayBase.csproj">
+      <Project>{83C727BF-DA78-45EC-BD60-23118EA73F46}</Project>
+      <Name>TeamayBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42249</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
